@@ -1,15 +1,15 @@
 # The Most Honourable and Entirely Imaginary Order of the Bear Bell
 
-This repository now contains the complete static website for the **Grand Assembly of the Most Honourable and Entirely Imaginary Order of the Bear Bell**.
+This repository contains the complete static website for the **Grand Assembly of the Most Honourable and Entirely Imaginary Order of the Bear Bell**.
 
-## Live pages
+## Live page
 
 - ChatGPT-hosted page: **https://bear-bell-ritual.dskiad.chatgpt.site/**
-- GitHub Pages deployment: **https://dskiad.github.io/bear-bell-ritual/**
+- GitHub Pages address after one-time Pages activation: **https://dskiad.github.io/bear-bell-ritual/**
 
 ## Main entrance
 
-Opening `index.html` presents the official Bear Bell emblem and three clear entrances:
+Opening `index.html` presents the Bear Bell title and emblem with exactly three entrances:
 
 1. **User** — open access, no code required.
 2. **Grand Secretary** — protected access.
@@ -32,7 +32,9 @@ The Grand Secretary and Webmaster areas use the owner-selected access code. The 
 
 ## GitHub Pages
 
-A GitHub Actions workflow is included at `.github/workflows/pages.yml` to deploy the repository as a static GitHub Pages website whenever `main` is updated.
+A deployment workflow is included at `.github/workflows/pages.yml`.
+
+GitHub currently requires Pages to be enabled once in the repository settings before the workflow can publish. In GitHub open **Settings → Pages**, set **Source** to **GitHub Actions**, then run the Pages workflow again. After that, pushes to `main` will deploy the website automatically.
 
 ## Ritual character
 
