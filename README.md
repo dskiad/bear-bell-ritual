@@ -1,31 +1,39 @@
-# Bear Bell Ritual
+# The Most Honourable and Entirely Imaginary Order of the Bear Bell
 
-Bilingual interactive Bear Bell ritual application in English and Greek, together with the Grand Order portal and certificate tools.
+This repository now contains the complete static website for the **Grand Assembly of the Most Honourable and Entirely Imaginary Order of the Bear Bell**.
 
-## Live page
+## Live pages
 
-**https://bear-bell-ritual.dskiad.chatgpt.site/**
+- ChatGPT-hosted page: **https://bear-bell-ritual.dskiad.chatgpt.site/**
+- GitHub Pages deployment: **https://dskiad.github.io/bear-bell-ritual/**
 
-## Access
+## Main entrance
 
-- **User / Member & Ritual Reader:** open access — no code required.
-- **Editor / Certificate Editor:** protected access.
-- **Grand Secretary:** protected access.
+Opening `index.html` presents the official Bear Bell emblem and three clear entrances:
 
-## Main features
+1. **User** — open access, no code required.
+2. **Grand Secretary** — protected access.
+3. **Webmaster** — protected access.
 
-- Original bilingual Bear Bell ritual
-- Grand Order sector
-- 8 active ritual officers
-- Proposed 20 Grand Officers
-- Certificate Editor
-- Grand Secretary administrative dashboard
-- General role menu for User, Editor and Grand Secretary
+The Grand Secretary and Webmaster areas use the owner-selected access code. The plain-text code is not stored in the source; the browser verifies its SHA-256 hash.
 
-## Source
+## Website pages
 
-The maintained HTML source is retained in the private `digital-applications-book` repository under:
+- `index.html` — main three-role menu.
+- `user.html` — open User / Ritual Reader area.
+- `ritual.html` — browser viewer that assembles the ritual PDF from the repository PDF chunks.
+- `grand-order.html` — Grand Order structure, 8 active ritual officers and proposed 20 Grand Officers.
+- `grand-secretary.html` — protected Grand Secretary dashboard.
+- `webmaster.html` — protected Webmaster dashboard and site map.
+- `certificate-editor.html` — protected certificate editor available to Grand Secretary or Webmaster.
+- `logo.svg` — Bear Bell website emblem.
+- `style.css` — shared responsive styling.
+- `auth.js` — shared browser access control.
 
-`apps/bear-bell-ritual/`
+## GitHub Pages
 
-The live application is available from the link above.
+A GitHub Actions workflow is included at `.github/workflows/pages.yml` to deploy the repository as a static GitHub Pages website whenever `main` is updated.
+
+## Ritual character
+
+The ritual itself describes the Order as a light-hearted work of parody and charitable entertainment. The website retains that framing while providing a coherent Grand Assembly structure, ceremonial officer titles and administrative tools.
